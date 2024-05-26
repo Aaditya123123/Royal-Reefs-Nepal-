@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+
+  
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Royal Reefs Nepal offers exquisite aaquatic products, including fish, corals, and equipment, ensuring premium quality and exceptional customer service.">
+
+<audio autoplay>
+        <source src="bg.mp3" type="audio/mp3">
+</audio>
+  <title>RoyalReefsNepal</title>
+  <style>
+    
+    * {
+      margin: 0px;
+      box-sizing: border-box;
+      font-family: Arial;
+
+    }
+
+    body {
+      background: linear-gradient(to right, #fff1c4, #ffffff, #fff1c4);
+      /*background-color:#ffffff;*/
+    }
+    
+
+    .head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      height: 60px;
+      background: #ffbb00;
+    }
+
+    .head p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-family: Arial;
+      font-size: 1rem;
+    }
+    
+    .head1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: black;
+      height: 80px;
+      background-color: #dedede;
+    }
+
+    .head1 .logo0 {
+      height: 150px;
+      margin-bottom: 70px;
+
+
+    }
+
+    .head1 .headlogo {
+      display: flex;
+      justify-content: flex-end;
+      align-items: right;
+      margin-left: 7rem;
+      margin-right: 1rem;
+      font-size: 2rem;
+    }
+
+    .head1 .headlogo1 {
+      display: flex;
+      justify-content: flex-end;
+      align-items: right;
+      margin-right: 0.5rem;
+      font-size: 2rem;
+
+    }
+
+    .head1 .headlogo2 {
+      display: flex;
+      justify-content: flex-end;
+      align-items: right;
+      margin-right: 0.5rem;
+      font-size: 2rem;
+    }
+
+    .head1 p {
+      display: flex;
+      font-weight: bold;
+      font-size: 30px;
+      text-shadow: 2px 2px 45px #a8a8a8, -2px -2px 45px #a8a8a8;
+      margin-left: 10rem;
+
+    }
+
+    .slider {
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      position: relative;
+      object-fit: cover;
+      background-position: center;
+      margin-bottom: 10px;
+    }
+
+    .image5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-position: center;
+      object-fit: cover;
+
+    }
+
+    .slider img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      display: flex;
+      margin-bottom: 15px;
+      align-items: centre;
+      justify-content: center;
+    }
+
+    .slider img.active {
+      opacity: 1;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 65px;
+      width: 400px;
+      margin-left: 250px;
+    }
+
+    nav .logo1 {
+      font-size: 3rem;
+    }
+
+    nav .search {
+      height: 3rem;
+      width: 320px;
+      color: black;
+      font-weight: 720;
+      font-size: 1rem;
+      margin-left: 20px;
+      border: 1px solid black;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    .search-logo {
+      display: flex;
+      height: 3.1rem;
+      width: 3rem;
+      color: black;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      background-color: #ff7b00;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .search-logo button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      height: 3rem;
+      font-size: 1.5rem;
+    }
+
+    .return {
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+
+    .return a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2rem;
+    }
+
+    .cart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      width: 3rem;
+      color: black;
+      font-size: 2rem;
+      margin-left: 40px;
+    }
+
+
+
+    .head2 {
+      height: 14rem;
+      background: #ffb030;
+    }
+
+    .head2 .op {
+      display: flex;
+      justify-content: center;
+      font-family: serif;
+      font-size: 60px;
+      font-weight: bold;
+      color: black;
+      margin-top: 20px;
+    }
+
+    .op1 {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      color: black;
+      margin-top: 35px;
+      margin-left: 10px;
+
+    }
+
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+    }
+
+    .container {
+      width: 280px;
+      height: 300px;
+      border: none;
+      background-color: #ffcf33;
+      padding: 10px;
+      margin: 15px;
+      font-weight: bold;
+      font-family: Arial;
+      font-size: 1rem;
+      text-align: center;
+      background-position: center;
+      object-fit: cover;
+    }
+
+    .container .a {
+      text-decoration: none;
+      list-style: none;
+      color: black;
+    }
+
+    /*contacting*/
+    .image {
+      display: flex;
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      align-items: centre;
+      justify-content: center;
+
+    }
+
+    .name {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .container:hover {
+      border: 2px solid #000000;
+      cursor: pointer;
+
+    }
+
+    .signin {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10rem;
+
+    }
+
+    .contains1 {
+      margin-left: 28%;
+    }
+
+    .btn2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 65px;
+      width: 60%;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      background: #ffc800;
+      border: none;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .btn2:hover {
+      border: 3px solid #000000;
+      background: black;
+      color: white;
+      box-shadow: 2px 2px 2px 2px #ffc800;
+
+    }
+
+    .p1 {
+      margin-left: 1rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+
+    }
+
+    .p2 {
+      margin-left: 3.6rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+
+    }
+
+    .container1 {
+      height: 35rem;
+      background-color: #382c00;
+      flex-wrap: wrap;
+    }
+
+    .container2 {
+      height: 35rem;
+      background-color: #524000;
+      flex-wrap: wrap;
+    }
+
+
+
+    .containers {
+      width: 250px;
+      height: 300px;
+      padding: 10px;
+      text-align: center;
+      background-position: center;
+      color: white;
+      border: none;
+      font-size: 1.7rem;
+    }
+
+    ul li {
+      width: 100%;
+      height: 70%;
+      text-decoratio: none;
+      list-style: none;
+    }
+
+    .names {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .hover:hover {
+      border: 2px solid #000000;
+      cursor: pointer;
+    }
+    .container1 p{
+      color:white;
+      margin-top:10px;
+      margin-bottom:30px;
+    }
+    .count{
+      margin-left:5px;
+    }
+    .op1{
+      font-weight:bold;
+      font-size:1.5rem;
+    }
+    
+  </style>
+
+</head>
+
+<body>
+
+  
+  <div class="head hover">
+    <p>
+      "Where Every Purchase Feels Like Royalty" - Royal Reefs Nepal!
+    </p>
+
+  </div>
+  <div class="head1 btn">
+    <img class="logo0 hover" src="logo.png" />
+    <p>
+      ROYAL REEFS NEPAL
+    </p>
+    <div class="headlogo">
+      <a href="https://www.facebook.com/aaditya.shah.3367174?mibextid=2JQ9oc"><i class="fa-brands fa-facebook"
+          style="color: #008cff;"></i></a>
+    </div>
+    <div class="headlogo1">
+      <a href="https://instagram.com/aadityaaa____7?igshid=NGVhN2U2NjQ0Yg=="><i class="fa-brands fa-instagram"
+          style="color: #ff1463;"></i></a>
+    </div>
+    <div class="headlogo2">
+      <a href="https://youtube.com/@Aaditya_Kumar_shah?si=XrqMH-oBAa32sCXP"><i class="fa-brands fa-youtube"
+          style="color: #ff0000;"></i></a>
+    </div>
+
+
+
+
+  </div>
+  <div class="slider">
+    <img class="image5" src="sport.jpg" alt="Image 1" class="image5" onclick="location.href=''">
+    <img class="image5" src="cosmeticbanner6.0.jpg" alt="Image 1" class="image5" onclick="location.href=''">
+    <img class="image5" src="study.jpg" alt="Image 2" onclick="location.href=''">
+    <img class="image5" src="watch.jpg" alt="Image 3" onclick="location.href=''">
+    <img src="medicines.jpg" class="image5" onclick="location.href=''" />
+    <img src="jewelery.jpg" class="image5" onclick="location.href=''" />
+    <img src="gym.jpg" class="image5" onclick="location.href=''" />
+    <img src="founders.JPG" class="image5" onclick="location.href=''" />
+    <img src="offers.jpg" class="image5" onclick="location.href=''" />
+    <img src="grocery_banner.jpg" class="image5" />
+    <img src="cosmeticbanner3.0.jpg" class="image5" onclick="location.href=''" />
+
+
+  </div>
+
+
+  <nav>
+    <div class="logo1">
+      <i class="fa-sharp fa-solid fa-crown fa-fade" style="color: #ffaa00;"></i>
+    </div>
+    <div class="search-bar">
+      <input placeholder="Search Royal Nepal" class="search" />
+
+    </div>
+    <div class="search-logo">
+
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="return hover">
+
+      <a href="#">
+        <pre>
+        Returns
+        <b>& Orders</b>
+      </pre>
+      </a>
+
+    </div>
+    <div class="cart hover">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <p class="count">
+        0
+      </p>
+
+    </div>
+
+
+  </nav>
+  <div class="head2">
+    <p class="op">100% Guaranteed Quality</p>
+    <p class="op1">
+      "Shop Smarter, Live Better: Unbox Joy with Every Purchase!"-RoyalReefsNepal
+    </p>
+    <!--hero section-->
+
+  </div>
+  <div class="main">
+    <!--1-cosmatic-->
+    <div class="container"onclick="location=href='cosmetics.html'">
+      <a class="a" href="cosmetics.html">
+        <img class="image" src="cosmetic.jpg" alt="Image">
+        <p class="name">Cosmetic section</p>
+      </a>
+    </div>
+    <!--2 toys-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="doll.jpg" alt="Image">
+        <p class="name">toys section</p>
+      </a>
+    </div>
+
+    <!---3-dressing-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="dress.jpg" alt="Image">
+        <p class="name">Dressing section</p>
+      </a>
+    </div>
+    <!--4-glossary-->
+
+    <div class="container" onclick="location.href='grocery.html'">
+      <img class="image" src="glossarys.jpg" alt="Image">
+      <p class="name">Grocery items</p>
+    </div>
+    <!--5-studyes -->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="study.jpg" alt="Image">
+        <p class="name">Study materials</p>
+      </a>
+    </div>
+    <!--6-shoes-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="shoes.jpg" alt="Image">
+        <p class="name">shoes & slippers</p>
+      </a>
+    </div>
+    <!--7-laptops-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="laptop.jpg" alt="Image">
+        <p class="name">Laptop section</p>
+      </a>
+    </div>
+    <!--8-books-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="books.jpg" alt="Image">
+        <p class="name">Books </p>
+      </a>
+    </div>
+    <!--9-computers-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="computers.jpg" alt="Image">
+        <p class="name">Computer and accessories</p>
+      </a>
+    </div>
+    <!--10-watch-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="watch.jpg" alt="Image">
+        <p class="name">luxurious watches</p>
+      </a>
+    </div>
+    <!--11-jewellery-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="jewelery.jpg" alt="Image">
+        <p class="name"> Jewellery's</p>
+      </a>
+    </div>
+    <!--12-lense-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="len.jpg" alt="Image">
+        <p class="name">Goggles</p>
+      </a>
+    </div>
+    <!--13-medicines-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="medicines.jpg" alt="Image">
+        <p class="name">Health care & Medicines</p>
+      </a>
+    </div>
+    <!--14-perfume-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="perfume.webp" alt="Image">
+        <p class="name">perfumes</p>
+      </a>
+    </div>
+    <!--15-puzzuls-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="puzzle.jpg" alt="Image">
+        <p class="name">puzzles</p>
+      </a>
+    </div>
+    <!--16-Sports & Outdoors-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="sports.jpg" alt="Image">
+        <p class="name">Sports & Outdoors</p>
+      </a>
+    </div>
+    <!--17-kitchen-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="kitchen.jpg" alt="Image">
+        <p class="name">kitchens equipments</p>
+      </a>
+    </div>
+    <!--18-Traditional section for women-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="traditional-women.jpg" alt="Image">
+        <p class="name">Traditionals clothing for women</p>
+      </a>
+    </div>
+    <!--19-Traditional section for men-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="traditional-man.jpg" alt="Image">
+        <p class="name">Traditional clothing for men</p>
+      </a>
+    </div>
+    <!--20-baby care essential -->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="babycare.jpg" alt="Image">
+        <p class="name">Baby care Essentials</p>
+      </a>
+    </div>
+    <!--21-home items-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="home-items.jpg" alt="Image">
+        <p class="name">Home items</p>
+      </a>
+    </div>
+    <!--22-gym items-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="gym.jpg" alt="Image">
+        <p class="name">Home gymnasium items</p>
+      </a>
+    </div>
+    <!--23-vegetable-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="vegetables.jpg" alt="Image">
+        <p class="name">vegetables</p>
+      </a>
+    </div>
+    <!--24&pet foods-->
+    <div class="container">
+      <a class="a" href="#"><img class="image" src="petfood.jpg" alt="Image">
+        <p class="name">Pet foods</p>
+      </a>
+    </div>
+  </div>
+  
+  <!--sign in -->
+  <footer>
+    <div class='signin'></div>
+    <div class="contains1">
+      <p class="p1">
+        See personalized recommendations
+      </p>
+      <button class='btn2' onclick="location.href='op.html'">Sign in</button>
+      <p class="p2">
+        New customer? <a href="op.html"> Start here</a>
+      </p>
+    </div>
+
+    <div class="signin">
+
+    </div>
+    <!--last section-->
+    <div class="container1">
+      <div class="containers">
+        <p class="names">Founder</p>
+        <ul>
+          <li>Aaditya Kumar shah</li>
+          <li>Nepal, koshi, Biratnagar</li>
+          <li><p>
+             Total members visited:</p>
+            
+
+<img src="https://hitwebcounter.com/counter/counter.php?page=9959721&style=0024&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" />                         
+
+          
+          </li>         
+          
+        </ul>
+          
+        
+
+      </div>
+      <div class="container2">
+
+      </div>
+
+  </footer>
+  <script src="https://kit.fontawesome.com/333462ad4d.js" crossorigin="anonymous">
+  </script>
+  <script>
+    let images = document.querySelectorAll('.slider img');
+    let index = 0;
+    setInterval(function () {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    }, 2000);
+  </script>
+  
+</body></html>

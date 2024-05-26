@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <title>cosmetic products form royal reefs nepal</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      font-family: Arial;
+    }
+
+    body {
+      background: linear-gradient(to right, #ffe0e0, #ffffff, #ffe0e0);
+    }
+
+    .p1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3.5rem;
+      font-weight: bold;
+      font-family: serif;
+      margin-bottom: 2rem;
+      padding: 20px;
+      color: #00005c;
+    }
+
+    /*.p2{
+  background:linear-gradient(to right,#ff8585, #ffa1bf , #ffdbdb);
+  
+}*/
+
+    .p3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: serif;
+      margin-top: 2rem;
+      padding: 20px;
+      color: #3b3b3b;
+    }
+
+    .p3:hover {
+      border: 2px solid black;
+    }
+
+    /* CSS */
+    .slider {
+      width: 100%;
+      height: 550px;
+      overflow: hidden;
+      position: relative;
+      object-fit: cover;
+      background-position: center;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #ffe0e0, #ffffff, #ffe0e0);
+
+    }
+
+    .image5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-position: center;
+      object-fit: cover;
+
+    }
+
+    .slider img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      display: flex;
+      margin-bottom: 15px;
+      align-items: centre;
+      justify-content: center;
+    }
+
+    .slider img.active {
+      opacity: 1;
+    }
+
+    .lists {
+      font-size: 1rem;
+      font-weight: bold;
+      height: 20rem;
+      width: 15rem;
+      background: linear-gradient(to left, #ffffff, #ffc4ff);
+      backdrop-filter: blur(5px);
+
+    }
+
+    .lists ul li {
+      text-decoration: none;
+      list-style: none;
+    }
+
+    .lists p {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+    }
+
+    @media (max-width: 900) {
+      .container {
+        width: 390px;
+        height: 375px;
+        border-radius: 12px;
+        background-color: #ffe8ff;
+        padding: 10px;
+        margin: 15px;
+        font-weight: bold;
+        font-family: Arial;
+        font-size: 1rem;
+        text-align: center;
+        background-position: center;
+        object-fit: cover;
+      }
+
+    }
+    /*cointainer*/
+    .container {
+      width: 24.375rem;
+      height: 23.125rem;
+      border-radius: 12px;
+      background-color: #ffe8ff;
+      padding: 10px;
+      margin: 15px;
+      font-weight: bold;
+      font-family: Arial;
+      font-size: 1.5rem;
+      text-align: center;
+      background-position: center;
+      object-fit: cover;
+      transition-duration: 0.3s;
+    
+    }
+
+    .container .a {
+      text-decoration: none;
+      list-style: none;
+      color: black;
+    }
+    
+
+    /*contacting*/
+    .image {
+      display: flex;
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      align-items: centre;
+      justify-content: center;
+      border-radius: 12px;
+      background-color: #fff2ff;
+      transition-duration: 1s;
+
+    }
+
+    .name {
+      font-size: 20px;
+      margin-top: 10px;
+      
+    }
+
+    .container:hover {
+       box-shadow: 0px 0px 50px #ffe0e0,
+0px 0px 25px #ffe0e0,0px 0px 50px #ffe0e0,0px 0px 100px #ffe0e0,0px 0px 200px #ffe0e0;
+      cursor: pointer;
+      width: 24.575rem;
+      height: 23.325rem
+    
+
+    }
+    
+    @media(max-width:900px){
+      .container {
+      width: 24.375rem;
+      height: 23.125rem;
+      border-radius: 12px;
+      background-color: #ffe8ff;
+      padding: 10px;
+      margin: 15px;
+      font-weight: bold;
+      font-family: Arial;
+      font-size: 1.5rem;
+      text-align: center;
+      background-position: center;
+      object-fit: cover;
+    }
+
+    .container .a {
+      text-decoration: none;
+      list-style: none;
+      color: black;
+    }
+
+    /*contacting*/
+    .image {
+      display: flex;
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      align-items: centre;
+      justify-content: center;
+      border-radius: 12px;
+      background-color: #fff2ff;
+
+    }
+      .name {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .container:hover {
+      border: 2px solid #ff9494;
+      cursor: pointer;
+
+    }
+
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      height: 80px;
+      color: black;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .search1 {
+      display: flex;
+      margin-left: 20px;
+      height: 55px;
+      width: 450px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      background-color: none;
+      border: 0.7px solid #000000;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      justify-content: center;
+      font-size: 1.4rem;
+
+    }
+
+    .btn {
+      display: flex;
+      height: 55px;
+      width: 55px;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border: 0.7px solid black;
+      background: #ffc7df;
+    }
+
+    .hover:hover {
+      border: 2px solid #ff9494;
+    }
+
+    .btn10 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+
+    }
+
+    .btn11 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 150px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      background: linear-gradient(to top right, #ffdef6,
+          white, #ffdef6);
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header>
+    <div class="p2">
+      <p class="p1">Cosmetics</p>
+      <div class="p3">
+        "Beauty becomes more beautiful in your own skin!"
+      </div>
+    </div>
+    <div class="slider">
+      <img class="image5" src="cosmeticbanner1.0.jpg" alt="Image 1" class="active" onclick="location.href=''">
+      <!--- <img class="image5" src="cosmeticbanner7.jpg" alt="Image 2" onclick="location.href=''">-->
+      <img class="image5" src="cosmeticbanner2.0.jpg" alt="Image 2" onclick="location.href=''">
+      <img class="image5" src="cosmeticbanner3.0.jpg" alt="Image 3" onclick="location.href=''">
+      <img src="cosmeticbanner4.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="cosmeticbanner5.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="cosmeticbanner6.0.jpg" class="image5" onclick="location.href=''" />
+
+      <img src="cosmetic_powder.jpg" class="image5" onclick="location.href=''" />
+      <!---->
+
+      <img src="cosmeticbanner1.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="cosmeticbanner2.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="cosmeticbanner3.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="cosmeticbanner1.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="cosmeticbanner4.0.jpg" class="image5" onclick="location.href=''" />
+
+
+
+    </div>
+    <nav>
+      <div class="search">
+        <input placeholder="Search cosmetics" class="search1 hover" />
+        <button class="btn hover" onclick="location.href=''"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <!--hero-section-->
+
+    <div class="main">
+      <!--1-lipsstick-->
+
+      <div class="container" onclick="location.href='lips-stick.html'">
+        <img class="image" src="cosmetic_Lipssticks.jpg" alt="Image">
+        <p class="name">Lipsticks</p>
+      </div>
+      <!--2--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_foundation.jpg" alt="Image">
+        <p class="name">Foundation</p>
+      </div>
+      <!--3--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_powders.jpg" alt="Image">
+        <p class="name">Powder</p>
+      </div>
+      <!--4--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_blushs.jpg" alt="Image">
+        <p class="name">Blush</p>
+      </div>
+      <!--5--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_Eyeshadow.jpg" alt="Image">
+        <p class="name">Eyeshadow</p>
+      </div>
+      <!--6--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_Eyeliner.jpg" alt="Image">
+        <p class="name">Eyeliner</p>
+      </div>
+      <!--7--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_Mascaras.jpg" alt="Image">
+        <p class="name">Mascara</p>
+      </div>
+      <!--8--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_Mackupremover.jpg" alt="Image">
+        <p class="name">Makeup remover</p>
+      </div>
+      <!--9--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_lipgloss.jpg" alt="Image">
+        <p class="name">Lip gloss</p>
+      </div>
+      <!--10--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_concealers.jpg" alt="Image">
+        <p class="name">Concealer</p>
+      </div>
+      <!--11--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_Nailpolish.jpg" alt="Image">
+        <p class="name">Nail polish</p>
+      </div>
+      <!--12--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_bronzers.jpg" alt="Image">
+        <p class="name">Bronzer</p>
+      </div>
+      <!--13--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_Lipliners.jpg" alt="Image">
+        <p class="name">Lip liner</p>
+      </div>
+      <!--14--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_Brownpencilpowders.jpg" alt="Image">
+        <p class="name">Brow pencil/powder</p>
+      </div>
+      <!--15--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_settingspray.jpg" alt="Image">
+        <p class="name">Setting spray</p>
+      </div>
+      <!--16--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_settingpowder.jpg" alt="Image">
+        <p class="name">Setting powder
+      </div>
+      <!--17--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_serums.jpg" alt="Image">
+        <p class="name">Serum</p>
+      </div>
+      <!--18--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_eyebrowgel.jpg" alt="Image">
+        <p class="name">Eyebrow gel</p>
+      </div>
+      <!--19--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_primer.jpg" alt="Image">
+        <p class="name">Primer</p>
+      </div>
+      <!--20--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_eyelashcurlers.jpg" alt="Image">
+        <p class="name">Eyelash curler</p>
+      </div>
+      <!--21--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="moisturizer.webp" alt="Image">
+        <p class="name">moisturizer</p>
+      </div>
+      <!--22--facemask-->
+
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_facemask.jpg" alt="Image">
+        <p class="name">Face masks</p>
+      </div>
+      <!--23-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_facecleanser.jpg" alt="Image">
+        <p class="name">Face cleanser</p>
+      </div>
+      <!--24-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_facescrubs.jpg" alt="Image">
+        <p class="name">Face scrub</p>
+      </div>
+      <!--25-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_facewash.jpg" alt="Image">
+        <p class="name">Face washer</p>
+      </div>
+      <!--26-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_eyecream.jpg" alt="Image">
+        <p class="name">Eye Cream</p>
+      </div>
+      <!--27-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_exfoliator.jpg" alt="Image">
+        <p class="name">Exfoliator</p>
+      </div>
+      <!--28-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_sunscreen.jpg" alt="Image">
+        <p class="name">Sunscreen</p>
+      </div>
+      <!--29-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_highlighters.jpg" alt="Image">
+        <p class="name">Highlighter</p>
+      </div>
+      <!--30-->
+
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_Cuticle.jpg" alt="Image">
+        <p class="name">Cuticle</p>
+      </div>
+      <!--31-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_Acnespottreatments.jpg" alt="Image">
+        <p class="name">Acne spot treatment</p>
+      </div>
+      <!--32-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_Beautyblendersponges.jpg" alt="Image">
+        <p class="name">Beauty blender/sponge</p>
+      </div>
+      <!--33-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_lipbalms.jpg" alt="Image">
+        <p class="name">Lip balm</p>
+      </div>
+      <!--34-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_mackupbrushs.jpeg" alt="Image">
+        <p class="name">Makeup brushes</p>
+      </div>
+      <!--35-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_faceoil.jpg" alt="Image">
+        <p class="name">Face oil</p>
+      </div>
+      <!--36-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="cosmetic_hairserums.jpg" alt="Image">
+        <p class="name">Hair serum</p>
+      </div>
+
+
+
+    </div>
+    <div class="btn10">
+      <button class="btn11" onclick="location.href='cosmetic_more.html'">
+        See more
+      </button>
+    </div>
+
+  </main>
+  <script src="https://kit.fontawesome.com/333462ad4d.js" crossorigin="anonymous">
+  </script>
+  <script>
+    let images = document.querySelectorAll('.slider img');
+    let index = 0;
+    setInterval(function () {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    }, 2000);
+  </script>
+  <script src="https://kit.fontawesome.com/333462ad4d.js" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

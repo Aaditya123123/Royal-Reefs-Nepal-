@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <title>Grocery items form royal reefs nepal</title>
+
+  <style>
+     * {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  /*background:linear-gradient(to right,#c2ffc2, #ffffff , #00ffff);*/
+  background-color: white;
+}
+
+.p1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: serif;
+  margin-bottom: 2rem;
+  padding: 20px;
+  color: #00005c;
+}
+
+/*.p2{
+  background:linear-gradient(to right,#ff8585, #ffa1bf , #ffdbdb);
+  
+}*/
+
+.p3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: serif;
+  margin-top: 2rem;
+  padding: 20px;
+  color: #3b3b3b;
+}
+
+.p3:hover {
+  border: 2px solid black;
+}
+
+/* CSS */
+.slider {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  /*background:linear-gradient(to right,#c2ffc2,#ffffff , #c2ffc2);*/
+
+}
+
+.image5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  object-fit: cover;
+
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  margin-bottom: 15px;
+  align-items: centre;
+  justify-content: center;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+.lists {
+  font-size: 1rem;
+  font-weight: bold;
+  height: 20rem;
+  width: 15rem;
+  background: linear-gradient(to left, #ffffff, #ffc4ff);
+  backdrop-filter: blur(5px);
+
+}
+
+.lists ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.lists p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+@media (max-width: 900) {
+  .container {
+    width: 390px;
+    height: 375px;
+    border-radius: 12px;
+    background-color: #d6d6d6;
+    padding: 10px;
+    margin: 15px;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 1rem;
+    text-align: center;
+    background-position: center;
+    object-fit: cover;
+  }
+
+}
+
+/*cointainer*/
+.container {
+  width: 280px;
+  height: 300px;
+  
+  background-color: #ffd700;
+  padding: 10px;
+  margin: 15px;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 1.5rem;
+  text-align: center;
+  background-position: center;
+  object-fit: cover;
+}
+
+.container .a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+/*contacting*/
+.image {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  align-items: centre;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: #bfbfbf;
+
+}
+
+.name {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.container:hover {
+  border: 2px solid #000000;
+  cursor: pointer;
+
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  color: black;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.search1 {
+  display: flex;
+  margin-left: 20px;
+  height: 55px;
+  width: 450px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: none;
+  border: 0.7px solid #000000;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.4rem;
+
+}
+
+.btn {
+  display: flex;
+  height: 55px;
+  width: 55px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 0.7px solid black;
+  background: #ffc400;
+}
+
+.hover:hover {
+  border: 2px solid #000000;
+}
+
+.btn10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+}
+
+.btn11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 150px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background: linear-gradient(to top right, #ffdef6,
+      white, #ffdef6);
+}
+    
+  </style>
+  
+
+</head>
+
+<body>
+  <header>
+    <div class="p2">
+      <p class="p1">Grocery</p>
+      <div class="p3">
+        "Groceries as Unique as You Are – Royal Reefs!"
+      </div>
+    </div>
+    <div class="slider">
+      <img class="image5" src="grocery_banner7.0.jpg" alt="Image 1" class="active" onclick="location.href=''">
+      <!--- <img class="image5" src="cosmeticbanner7.jpg" alt="Image 2" onclick="location.href=''">-->
+      <img class="image5" src="grocery_banner1.0.jpg" alt="Image 2" onclick="location.href=''">
+      <img class="image5" src="grocery_banner2.0.jpg" alt="Image 3" onclick="location.href=''">
+      <img src="grocery_banner3.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="grocery_banner4.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="grocery_banner5.0.jpg" class="image5" onclick="location.href=''" />
+
+      <img src="grocery_banner6.0.jpg" class="image5" onclick="location.href=''" />
+      <!---->
+
+      <img src="grocery_banner7.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="grocery_banner8.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="grocery_banner9.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="grocery_banner10.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="grocery_banner11.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="grocery_banner12.0.jpg" class="image5" onclick="location.href=''" />
+      <img src="grocery_banner13.0.jpg" class="image5" onclick="location.href=''" />
+
+
+
+    </div>
+    <nav>
+      <div class="search">
+        <input placeholder="Search Grocery" class="search1 hover" />
+        <button class="btn hover" onclick="location.href=''"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <!--hero-section-->
+
+    <div class="main">
+      <!--1--->
+
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Dairys.jpg" alt="Image">
+        <p class="name">Dairy and Eggs</p>
+      </div>
+      <!--2--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Bakery.jpg" alt="Image">
+        <p class="name">Bakery</p>
+      </div>
+      <!--3--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Cannedgood.jpeg" alt="Image">
+        <p class="name">Canned Goods </p>
+      </div>
+      <!--4--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Pastaandgrains.jpg" alt="Image">
+        <p class="name">Pasta & Grains </p>
+      </div>
+      <!--5--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Condiment.jpg" alt="Image">
+        <p class="name">Condiment</p>
+      </div>
+      <!--6--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Spicesandseasonings.jpg" alt="Image">
+        <p class="name">Spices & Seasonings</p>
+      </div>
+      <!--7--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_drinks.jpg" alt="Image">
+        <p class="name">Drinks</p>
+      </div>
+      <!--8--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Snacktime.jpg" alt="Image">
+        <p class="name">Snack Time</p>
+      </div>
+      <!--9--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Delidelights.jpg" alt="Image">
+        <p class="name">Deli Delights</p>
+      </div>
+      <!--10--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Bakingsupplies.jpg" alt="Image">
+        <p class="name">Baking Supplies</p>
+      </div>
+      <!--11--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Brakefastoptions.jpg" alt="Image">
+        <p class="name">Breakfast Options</p>
+      </div>
+      <!--12--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Babytoddlerneed.png" alt="Image">
+        <p class="name">Baby & Toddler Needs</p>
+      </div>
+      <!--13--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Stayhealthy.jpg" alt="Image">
+        <p class="name">Stay Healthy</p>
+      </div>
+      <!--14--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Cleanhome.jpg" alt="Image">
+        <p class="name">Clean Home</p>
+      </div>
+      <!--15--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Personalcare.jpg" alt="Image">
+        <p class="name">personal Care </p>
+      </div>
+      <!--16--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Lowcrablife.jpeg" alt="Image">
+        <p class="name">Low Carb Life 
+      </div>
+      <!--17--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Specialdrink.jpg" alt="Image">
+        <p class="name">Special Drinks</p>
+      </div>
+      <!--18--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Homeofficefuel.jpg" alt="Image">
+        <p class="name">Home Office Fuel</p>
+      </div>
+      <!--19--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Outdoorfun.jpg" alt="Image">
+        <p class="name">Outdoor Fun</p>
+      </div>
+      <!--20--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Cookingmagic.jpg" alt="Image">
+        <p class="name">Cooking Magic</p>
+      </div>
+      <!--21--->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Surpriseboxes.jpg" alt="Image">
+        <p class="name">Surprise Boxes</p>
+      </div>
+      <!--22--facemask-->
+
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Softdrinks.jpg" alt="Image">
+        <p class="name">Soft Drinks</p>
+      </div>
+      <!--23-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Diycookingkits.jpg" alt="Image">
+        <p class="name">DIY Cooking Kits</p>
+      </div>
+      <!--24-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Bulkbuys.jpg" alt="Image">
+        <p class="name">Bulk Buys</p>
+      </div>
+      <!--25-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Quickmeals.jpg" alt="Image">
+        <p class="name">Quick Meals</p>
+      </div>
+      <!--26-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Hyfratedstation.jpg" alt="Image">
+        <p class="name">Hydrated Station</p>
+      </div>
+      <!--27-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Foodforthought.jpg" alt="Image">
+        <p class="name">Food for Thought</p>
+      </div>
+      <!--28-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Homespaday.jpg" alt="Image">
+        <p class="name">Home Spa Day</p>
+      </div>
+      <!--29-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Virtualcooking.jpg" alt="Image">
+        <p class="name">Virtual Cooking Classes</p>
+      </div>
+      <!--30-->
+
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Officefuel.jpg" alt="Image">
+        <p class="name">Office Fuel</p>
+      </div>
+      <!--31-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Proteinpowderhouse.jpg" alt="Image">
+        <p class="name">Protein Powderhouse</p>
+      </div>
+      <!--32-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Zerowaste.jpg" alt="Image">
+        <p class="name">Zero Waste </p>
+      </div>
+      <!--33-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocer_Festivalfoods.jpg" alt="Image">
+        <p class="name">Festival Foods</p>
+      </div>
+      <!--34-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocer_Gamenightsnacks.jpg" alt="Image">
+        <p class="name">Game Night Snacks</p>
+      </div>
+      <!--35-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Dessertloverparadish.jpg" alt="Image">
+        <p class="name">Dessert Lover's Paradise</p>
+      </div>
+      <!--36-->
+      <div class="container" onclick="location.href=''">
+        <img class="image" src="grocery_Kitchengadgetsgalore.jpg" alt="Image">
+        <p class="name">Kitchen Gadgets Galore</p>
+      </div>
+
+
+
+    </div>
+    <div class="btn10">
+      <button class="btn11" onclick="location.href='cosmetic_more.html'">
+        See more
+      </button>
+    </div>
+
+  </main>
+  <script src="https://kit.fontawesome.com/333462ad4d.js" crossorigin="anonymous">
+  </script>
+  <script>
+    let images = document.querySelectorAll('.slider img');
+    let index = 0;
+    setInterval(function () {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    }, 2000);
+  </script>
+  <script src="https://kit.fontawesome.com/333462ad4d.js" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
